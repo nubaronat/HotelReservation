@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T18:49:14.478Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="kTXkuMnlgdinjAxsueTL" version="24.6.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-07-16T18:53:05.755Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="JQrTNnaPDT6koTeGI7wH" version="24.6.5" type="github" pages="3">
   <diagram name="onat" id="M1TizbwHI1AqUx8Kg7ru">
     <mxGraphModel dx="1615" dy="803" grid="0" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -154,15 +154,10 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PZq5CMHu0KsnGuBYeXbq" name="Tabels ">
-    <mxGraphModel dx="1393" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="961" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7o3mjtuUFQ3g64Hq9pl3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7o3mjtuUFQ3g64Hq9pl3-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="185" y="370" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="7o3mjtuUFQ3g64Hq9pl3-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry width="350" height="370" as="geometry" />
         </mxCell>
