@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-17T06:41:00.212Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="DXbpHeUPcklabXoW8xpG" version="24.6.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-07-17T12:57:00.344Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="6sXsTUDU7Q7w-mcPtt-F" version="24.7.0" type="github" pages="3">
   <diagram name="onat" id="M1TizbwHI1AqUx8Kg7ru">
     <mxGraphModel dx="1050" dy="557" grid="0" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -163,7 +163,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7o3mjtuUFQ3g64Hq9pl3-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry width="350" height="370" as="geometry" />
+          <mxGeometry width="350" height="380" as="geometry" />
         </mxCell>
         <mxCell id="7o3mjtuUFQ3g64Hq9pl3-2" value="Rooms(&lt;div&gt;RoomID INT PRIMARY KEY&amp;nbsp;&lt;/div&gt;&lt;div&gt;Type INT&amp;nbsp;&lt;/div&gt;&lt;div&gt;Price DECIMAL&amp;nbsp;&lt;/div&gt;&lt;div&gt;IsAvailable Bool&amp;nbsp;&lt;/div&gt;&lt;div&gt;HotelID INT FOREGIN KEY&amp;nbsp;&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="170" height="90" as="geometry" />
@@ -174,7 +174,7 @@
         <mxCell id="7o3mjtuUFQ3g64Hq9pl3-4" value="Reservations(&lt;div&gt;ReservationID INT PRIMARY KEY&lt;/div&gt;&lt;div&gt;RoomID ınt FOREGIN KEY&amp;nbsp;&lt;/div&gt;&lt;div&gt;CustomerID INT FOREGIN KEY&amp;nbsp;&lt;/div&gt;&lt;div&gt;CheckInDate DATE&amp;nbsp;&lt;/div&gt;&lt;div&gt;CheckOutDate DATE&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;TotalPrice DECIMAL&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="10" y="220" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="7o3mjtuUFQ3g64Hq9pl3-6" value="Hotels(&lt;div&gt;HotelID INT PRIMARY KEY&amp;nbsp;&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="7o3mjtuUFQ3g64Hq9pl3-6" value="Hotels(&lt;div&gt;HotelID INT PRIMARY KEY&lt;/div&gt;&lt;div&gt;HotelName VARCHAR50&lt;/div&gt;&lt;div&gt;City VARCHAR50&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="10" y="320" width="205" height="50" as="geometry" />
         </mxCell>
       </root>
