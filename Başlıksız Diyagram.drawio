@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-17T12:57:00.344Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="6sXsTUDU7Q7w-mcPtt-F" version="24.7.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-07-18T22:19:50.333Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="aaPWmlKSUKw4cTbajaNe" version="24.7.0" type="github" pages="4">
   <diagram name="onat" id="M1TizbwHI1AqUx8Kg7ru">
     <mxGraphModel dx="1050" dy="557" grid="0" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -373,6 +373,65 @@
           <mxGeometry x="80" width="330" height="30" as="geometry">
             <mxRectangle width="330" height="30" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OcDCUqbB7aCAF-l1utMa" name="Adjust of Tables">
+    <mxGraphModel dx="1319" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="570" y="290" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-1" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;hotel_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;name VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;description Text&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;address VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;city VARCHAR(10)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;country VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;phone VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;email VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;rating FLOAT&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-9">
+          <mxGeometry y="30" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-2" value="Hotels" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-9">
+          <mxGeometry x="85" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-11" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="35" y="30" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nRDwDQONeYsUFGXQLdGE-4" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_name VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;password VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;email VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;phone VARCHAR(10)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;created_at DATETIME&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-11">
+          <mxGeometry y="30" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nRDwDQONeYsUFGXQLdGE-7" value="Users" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-11">
+          <mxGeometry x="85" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-12" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="30" width="400" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-3" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;room_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;hotel_id INT FOREIGN KEY REFERENCES Hotels(hotel_id)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;room_type VARCHAR(20)//tek kişi,üç kişi ect.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;price_per_night DECIMAL&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;availability BOOLEAN&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-12">
+          <mxGeometry y="30" width="400" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-4" value="Rooms" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-12">
+          <mxGeometry x="130" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-13" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="20" y="390" width="480" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-5" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;reservation_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_id&amp;nbsp;&lt;/font&gt;INT FOREIGN KEY REFERENCES Users(user_id)&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;room_id&amp;nbsp;&lt;/font&gt;INT FOREIGN KEY REFERENCES Rooms(room_id)&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;check_in_date DATE&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;check_out_date DATE&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;total_price DECIMAL&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;reservation_status VARCHAR(20)//Cancelled,Approved&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-13">
+          <mxGeometry y="33" width="480" height="187" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-6" value="Reservaitons" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0o_SYYz5hkE-AfQn-xej-13">
+          <mxGeometry x="137.14285714285714" width="107.75510204081631" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0o_SYYz5hkE-AfQn-xej-3" target="0o_SYYz5hkE-AfQn-xej-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="210" />
+              <mxPoint x="560" y="245" />
+              <mxPoint x="750" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0o_SYYz5hkE-AfQn-xej-3" target="0o_SYYz5hkE-AfQn-xej-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0o_SYYz5hkE-AfQn-xej-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nRDwDQONeYsUFGXQLdGE-4" target="0o_SYYz5hkE-AfQn-xej-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
