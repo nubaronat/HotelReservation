@@ -3,6 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
+using System.Text;
     public partial class VeriTabaniOlustur : DbMigration
     {
         public override void Up()

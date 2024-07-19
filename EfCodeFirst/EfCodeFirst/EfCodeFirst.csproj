@@ -54,11 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\EfCodeFirstContext.cs" />
-    <Compile Include="Entity\Category.cs" />
-    <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\Hotel.cs" />
+    <Compile Include="Entity\Reservation.cs" />
+    <Compile Include="Entity\Room.cs" />
+    <Compile Include="Entity\Customer.cs" />
     <Compile Include="Migrations\202407181159191_VeriTabaniOlustur.cs" />
     <Compile Include="Migrations\202407181159191_VeriTabaniOlustur.Designer.cs">
       <DependentUpon>202407181159191_VeriTabaniOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407181451309_renamedTables.cs" />
+    <Compile Include="Migrations\202407181451309_renamedTables.Designer.cs">
+      <DependentUpon>202407181451309_renamedTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407190956420_Add-Migration.cs" />
+    <Compile Include="Migrations\202407190956420_Add-Migration.Designer.cs">
+      <DependentUpon>202407190956420_Add-Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -71,6 +81,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407181159191_VeriTabaniOlustur.resx">
       <DependentUpon>202407181159191_VeriTabaniOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407181451309_renamedTables.resx">
+      <DependentUpon>202407181451309_renamedTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407190956420_Add-Migration.resx">
+      <DependentUpon>202407190956420_Add-Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
