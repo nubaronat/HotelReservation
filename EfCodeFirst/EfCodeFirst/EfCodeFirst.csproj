@@ -42,7 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,13 +72,26 @@
     <Compile Include="Migrations\202407190956420_Add-Migration.Designer.cs">
       <DependentUpon>202407190956420_Add-Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407220909104_VeriTabaniGüncellemesi.cs" />
+    <Compile Include="Migrations\202407220909104_VeriTabaniGüncellemesi.Designer.cs">
+      <DependentUpon>202407220909104_VeriTabaniGüncellemesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407181159191_VeriTabaniOlustur.resx">
@@ -87,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407190956420_Add-Migration.resx">
       <DependentUpon>202407190956420_Add-Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407220909104_VeriTabaniGüncellemesi.resx">
+      <DependentUpon>202407220909104_VeriTabaniGüncellemesi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
