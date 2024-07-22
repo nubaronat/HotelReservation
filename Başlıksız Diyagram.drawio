@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-19T13:22:33.972Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="nP7DVEbd405Csmjl8j_D" version="24.7.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-07-22T06:49:57.495Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="WPu8PS_LQAZnV4TJW9tW" version="24.7.2" type="github" pages="5">
   <diagram id="er5tn0g2h49u2DX2Hihr" name="Flow Diagram Of Project">
     <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -79,7 +79,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OcDCUqbB7aCAF-l1utMa" name=" Tables of DB">
-    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,7 +95,7 @@
         <mxCell id="0o_SYYz5hkE-AfQn-xej-11" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="35" y="30" width="280" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="nRDwDQONeYsUFGXQLdGE-4" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_name VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;password VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;email VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;phone VARCHAR(10)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;created_at DATETIME&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="0o_SYYz5hkE-AfQn-xej-11" vertex="1">
+        <mxCell id="nRDwDQONeYsUFGXQLdGE-4" value="&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_id INT PRIMARY KEY,&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;user_name VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;password VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;email VARCHAR(20)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;phone VARCHAR(10)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;created_at DATETIME&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot; face=&quot;monospace&quot;&gt;role VARCHAR(10)&lt;/font&gt;&lt;/li&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="0o_SYYz5hkE-AfQn-xej-11" vertex="1">
           <mxGeometry y="30" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="nRDwDQONeYsUFGXQLdGE-7" value="Users" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="0o_SYYz5hkE-AfQn-xej-11" vertex="1">
