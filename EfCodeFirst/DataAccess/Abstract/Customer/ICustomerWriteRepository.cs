@@ -1,4 +1,5 @@
-﻿using EfCodeFirst.Entity;
+﻿using DataAccess.Abstract;
+using EfCodeFirst.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IHotel : IRepository<Hotel>
+    public interface ICustomerWriteRepository : IWriteRepository<Customer>
     {
     }
 }
+ 

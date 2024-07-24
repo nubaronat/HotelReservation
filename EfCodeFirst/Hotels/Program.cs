@@ -1,7 +1,10 @@
+using Microsoft.AspNetCore.DataProtection.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IRepository<Customer>, CustomerReposityory>()
 
 var app = builder.Build();
 
