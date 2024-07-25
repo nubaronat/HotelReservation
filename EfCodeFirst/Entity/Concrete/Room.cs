@@ -11,14 +11,16 @@ namespace EfCodeFirst.Entity
     public class Room
     {
         [Key]
-        public int roomId { get; set; }
+        public int RoomId { get; set; }
         public int Type { get; set; }
 
 
-        [ForeignKey("Hotel")]
-        public int hotel_Id { get; set; }
-        public virtual Hotel Hotel { get; set; }
+        
+        public int HotelId { get; set; }
 
+        [ForeignKey("Hotel")]
+        public virtual Hotel Hotel { get; set; }
+        
         public decimal Price { get; set; }
         public bool IsAvailable { get; set; }
 

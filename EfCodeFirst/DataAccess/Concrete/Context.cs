@@ -1,17 +1,20 @@
 ﻿using EfCodeFirst.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccessLayer.Concrete
 {
     public class Context : DbContext
     {
-        public Context()
+        
+        public Context(DbContextOptions<Context> options) : base(options)
         {
         }
 
-        public Context(DbContextOptions<Context> options) : base(options)
+        public Context()
         {
+
         }
          
         public DbSet<Customer> Customers { get; set; }
@@ -22,7 +25,7 @@ namespace DataAccessLayer.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=HotelData;User Id=sa;Password=Paycoop123!; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=Project;User Id=sa;Password=Paycoop123!; TrustServerCertificate=True");
         }
 
     }
