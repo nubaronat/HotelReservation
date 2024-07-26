@@ -11,7 +11,7 @@ namespace DataAccess.Repository
     public class GenericRepository<T> : IGenericDa<T> where T : class
 
     {
-        private readonly Context _context;
+        protected readonly Context _context;
 
         public GenericRepository(Context context)
         {
@@ -30,7 +30,7 @@ namespace DataAccess.Repository
             return _context.Set<T>();
         }
 
-        public void GetById(int id)
+        public T GetById(int id)
         {
             throw new NotImplementedException();
         }

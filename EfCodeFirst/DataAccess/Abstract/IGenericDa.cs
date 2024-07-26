@@ -15,7 +15,7 @@ namespace DataAccess.Abstract
 
         //difference between List<T>
         IQueryable<T> GetAll();
-        void GetById (int id );
+        T GetById (int id );
 
     }
 }

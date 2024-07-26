@@ -13,20 +13,14 @@ namespace EfCodeFirst.Entity
         [Key]
         public int RoomId { get; set; }
         public int Type { get; set; }
-
-
-        
         public int HotelId { get; set; }
 
-        [ForeignKey("Hotel")]
+
+        [ForeignKey(nameof(HotelId))]
         public virtual Hotel Hotel { get; set; }
-        
+
         public decimal Price { get; set; }
         public bool IsAvailable { get; set; }
-
         public ICollection<Reservation> Reservations { get; set; }
-
-
-
     }
 }

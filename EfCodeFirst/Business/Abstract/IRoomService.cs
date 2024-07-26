@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IRoomService : IGenericService<Room>
+    public interface IRoomService
     {
-        
+        void Insert(RoomCreateRequestDto roomCreateRequestDto);
+        void Update(RoomUpdateRequestDto roomUpdateRequestDto);
+        void Delete(int id);
+        IQueryable<RoomResponseDto> GetAll();
+        RoomResponseDto GetById(int id);
+        IQueryable<RoomResponseDto> Filter(GetRoomRequestDto filterDto);
     }
 }

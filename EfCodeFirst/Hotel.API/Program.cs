@@ -18,6 +18,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddPersistenceServices();
 
 
+builder.Services.AddingBusinessServices();
+
+
 
 
 

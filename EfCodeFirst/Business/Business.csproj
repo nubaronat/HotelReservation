@@ -22,9 +22,4 @@
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Logging\" />
-    <Folder Include="ValidationRules\" />
-  </ItemGroup>
-
 </Project>

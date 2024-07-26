@@ -14,36 +14,105 @@ namespace Business.Concrete
 {
     public class RoomManager : IRoomService
     {
-        private readonly IRoomDa _roomDa;
+        private readonly IRoomDa _roomDal;
 
-        public RoomManager(IRoomDa roomDa)
+        public RoomManager(IRoomDa roomDal)
         {
-            _roomDa = roomDa;
+            _roomDal = roomDal;
         }
 
-        public void TDelete(int id)
+        public void Insert(RoomCreateRequestDto roomCreateRequestDto)
         {
-            _roomDa.Delete(id);
+            var room = new Room
+            {
+                Type = roomCreateRequestDto.Type,
+                HotelId = roomCreateRequestDto.HotelId,
+                Price = roomCreateRequestDto.Price,
+                IsAvailable = roomCreateRequestDto.IsAvailable
+            };
+            _roomDal.Insert(room);
         }
 
-        public IQueryable<Room> TGetAll()
+        public void Update(RoomUpdateRequestDto roomUpdateRequestDto)
         {
-            return _roomDa.GetAll();
+            var room = _roomDal.GetById(roomUpdateRequestDto.Id);
+            if (room != null)
+            {
+                room.Type = roomUpdateRequestDto.Type;
+                room.HotelId = roomUpdateRequestDto.HotelId;
+                room.Price = roomUpdateRequestDto.Price;
+                room.IsAvailable = roomUpdateRequestDto.IsAvailable;
+                _roomDal.Update(room);
+            }
         }
 
-        public Room TGetById(int id)
+        public void Delete(int id)
         {
-            return _roomDa.GetById(id);
+            _roomDal.Delete(id);
         }
 
-        public void TInsert(Room entity)
+        public IQueryable<RoomResponseDto> GetAll()
         {
-            _roomDa.Insert(entity);
+            return _roomDal.GetAll().Select(room => new RoomResponseDto
+            {
+                Id = room.RoomId,
+                Type = room.Type,
+                HotelId = room.HotelId,
+                Price = room.Price,
+                IsAvailable = room.IsAvailable
+            });
         }
 
-        public void TUpdate(Room entity)
+        public RoomResponseDto GetById(int id)
         {
-            _roomDa.Update(entity);
+            var room = _roomDal.GetById(id);
+            if (room == null)
+            {
+                return null;
+            }
+            return new RoomResponseDto
+            {
+                Id = room.RoomId,
+                Type = room.Type,
+                HotelId = room.HotelId,
+                Price = room.Price,
+                IsAvailable = room.IsAvailable
+            };
+        }
+
+        public IQueryable<RoomResponseDto> Filter(GetRoomRequestDto filterDto)
+        {
+            var query = _roomDal.GetAll();
+
+            if (filterDto.Id.HasValue)
+            {
+                query = query.Where(room => room.RoomId == filterDto.Id.Value);
+            }
+            if (filterDto.Type.HasValue)
+            {
+                query = query.Where(room => room.Type == filterDto.Type.Value);
+            }
+            if (filterDto.HotelId.HasValue)
+            {
+                query = query.Where(room => room.HotelId == filterDto.HotelId.Value);
+            }
+            if (filterDto.Price.HasValue)
+            {
+                query = query.Where(room => room.Price == filterDto.Price.Value);
+            }
+            if (filterDto.IsAvailable.HasValue)
+            {
+                query = query.Where(room => room.IsAvailable == filterDto.IsAvailable.Value);
+            }
+
+            return query.Select(room => new RoomResponseDto
+            {
+                Id = room.RoomId,
+                Type = room.Type,
+                HotelId = room.HotelId,
+                Price = room.Price,
+                IsAvailable = room.IsAvailable
+            });
         }
     }
 
