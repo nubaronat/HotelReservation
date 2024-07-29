@@ -11,7 +11,7 @@ public static class ServiceRegistration
     {
         services.AddScoped<IRoomDa, EfRoomDa>();
 
-
+        services.AddScoped<ICustomerDa, EfCustomerDa>();
 
     } 
 }

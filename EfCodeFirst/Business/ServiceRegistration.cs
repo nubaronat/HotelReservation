@@ -17,7 +17,7 @@ namespace Business
         {
             services.AddScoped<IRoomService, RoomManager>();
 
-
+            services.AddScoped<ICustomerService, CustomerManager>();
 
         }
     }
