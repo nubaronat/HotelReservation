@@ -51,9 +51,9 @@ namespace Business.Concrete
             _roomDal.Delete(id);
         }
 
-        public IQueryable<RoomResponseDto> GetAll()
+        public IQueryable<GetRoomRequestDto> GetAll()
         {
-            return _roomDal.GetAll().Select(room => new RoomResponseDto
+            return _roomDal.GetAll().Select(room => new GetRoomRequestDto
             {
                 Id = room.RoomId,
                 Type = room.Type,

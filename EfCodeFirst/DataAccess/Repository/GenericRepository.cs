@@ -1,4 +1,5 @@
-﻿using DataAccess.Abstract;
+﻿using Azure.Core;
+using DataAccess.Abstract;
 using DataAccessLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,11 @@ namespace DataAccess.Repository
         public void Delete(int id)
         {
             var value = _context.Set<T>().Find(id);
-            _context.Set<T>().Remove(value);
-            _context.SaveChanges();
+            if (value != null)
+            {
+                _context.Set<T>().Remove(value);
+                _context.SaveChanges();
+            }
         }
 
         public IQueryable<T> GetAll()
@@ -32,7 +36,7 @@ namespace DataAccess.Repository
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Find(id);
         }
 
         public void Insert(T entity)
@@ -43,7 +47,9 @@ namespace DataAccess.Repository
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(entity); 
+            _context.SaveChanges();
+            
         }
     }
 }

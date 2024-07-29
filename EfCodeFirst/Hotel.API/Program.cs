@@ -5,6 +5,7 @@ using DataAccess;
 using DataAccess.Abstract;
 
 using Business;
+using DataAccessLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<Context>();
 
 builder.Services.AddPersistenceServices();
 
