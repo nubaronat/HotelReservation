@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Entity.DTOs.Customer;
 using EfCodeFirst.Entity;
 using DataAccess.Abstract;
 using Business.Abstract;
-using Microsoft.EntityFrameworkCore;
-using Entity.DTOs.Room;
 
 namespace Business.Concrete
 {
