@@ -14,5 +14,6 @@ namespace Entity.DTOs.Room
         public int? HotelId { get; set; }
         public decimal? Price { get; set; }
         public bool? IsAvailable { get; set; }
+
     }
 }

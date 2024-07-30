@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/rooms")]
     [ApiController]
     public class RoomController : ControllerBase
     {
@@ -20,12 +20,18 @@ namespace Hotel.API.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] RoomCreateRequestDto roomCreateRequestDto)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
+
             _roomService.Insert(roomCreateRequestDto);
             return Ok();
         }
 
-        [HttpPut]
-        public IActionResult Update([FromBody] RoomUpdateRequestDto roomUpdateRequestDto)
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] RoomUpdateRequestDto roomUpdateRequestDto)
         {
             _roomService.Update(roomUpdateRequestDto);
             return Ok();
@@ -36,13 +42,6 @@ namespace Hotel.API.Controllers
         {
             _roomService.Delete(id);
             return Ok();
-        }
-
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            var rooms = _roomService.GetAll();
-            return Ok(rooms);
         }
 
         [HttpGet("{id}")]
@@ -56,8 +55,8 @@ namespace Hotel.API.Controllers
             return Ok(room);
         }
 
-        [HttpPost("filter")]
-        public IActionResult Filter([FromBody] GetRoomRequestDto filterDto)
+        [HttpGet("filter")]
+        public IActionResult Filter([FromQuery] GetRoomRequestDto filterDto)
         {
             var rooms = _roomService.Filter(filterDto);
             return Ok(rooms);
