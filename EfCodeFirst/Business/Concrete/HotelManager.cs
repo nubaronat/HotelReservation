@@ -10,7 +10,7 @@ using Entity.DTOs.Hotel;
 using EfCodeFirst.Entity;
 using DataAccess.Abstract;
 using Business.Abstract;
-using Entity.DTOs.Customer;
+
 
 namespace Business.Concrete
 {
@@ -18,6 +18,11 @@ namespace Business.Concrete
     {
         
         private readonly IHotelDa _hotelDal;
+        
+        public HotelManager(IHotelDa hotelDal)
+        {
+            _hotelDal = hotelDal;
+        }
         public void Delete(int id)
         {
             _hotelDal .Delete(id);
@@ -111,6 +116,7 @@ namespace Business.Concrete
 
 
             };
+            _hotelDal.Insert(hotel);
         }
 
         public void Update(HotelUpdateRequestDto hotelUpdateRequestDto)
@@ -126,6 +132,8 @@ namespace Business.Concrete
                 hotel.Phone = hotelUpdateRequestDto.Phone;
                 hotel.Email = hotelUpdateRequestDto.Email;
                 hotel.Rating = hotelUpdateRequestDto.Rating;
+                _hotelDal.Update(hotel);
+
             }
         }
     }

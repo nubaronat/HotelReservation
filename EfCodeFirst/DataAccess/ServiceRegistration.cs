@@ -14,6 +14,7 @@ public static class ServiceRegistration
         services.AddScoped<ICustomerDa, EfCustomerDa>();
 
         services.AddScoped<IHotelDa, EfHotelDa>();
-
+        
+        services.AddScoped<IReservationDa, EfReservationDa>();
     } 
 }

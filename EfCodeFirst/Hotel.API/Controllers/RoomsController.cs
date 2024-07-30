@@ -56,8 +56,8 @@ namespace Hotel.API.Controllers
             return Ok(room);
         }
 
-        [HttpPost("filter")]
-        public IActionResult Filter([FromBody] GetRoomRequestDto filterDto)
+        [HttpGet("filter")]
+        public IActionResult Filter([FromQuery] GetRoomRequestDto filterDto)
         {
             var rooms = _roomService.Filter(filterDto);
             return Ok(rooms);

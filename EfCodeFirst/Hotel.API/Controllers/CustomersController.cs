@@ -40,8 +40,8 @@ namespace Hotel.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var customer = _customerService.GetAll();
-            return Ok();
+            var customers = _customerService.GetAll();
+            return Ok(customers);
         }
 
         [HttpGet("{id}")]
@@ -54,11 +54,11 @@ namespace Hotel.API.Controllers
             }
             return Ok(customer);
         }
-        [HttpPost("filter")]
-        public IActionResult Filter([FromBody] GetCustomerRequestDto filterDto)
+        [HttpGet("filter")]
+        public IActionResult Filter([FromQuery] GetCustomerRequestDto filterDto)
         {
-            var customer = _customerService.Filter(filterDto);
-            return Ok();
+            var customers = _customerService.Filter(filterDto);
+            return Ok(customers);
         }
 
 

@@ -39,8 +39,8 @@ namespace Hotel.API.Controllers
         [HttpGet]
         public IActionResult GetAll() 
         {
-            var hotel = _hotelService.GetAll();
-            return Ok(hotel);
+            var hotels = _hotelService.GetAll();
+            return Ok(hotels);
         }
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
@@ -50,14 +50,14 @@ namespace Hotel.API.Controllers
             {
                 return NotFound();
             }
-            return Ok();
+            return Ok(hotel);
         
         }
-        [HttpPost("filter")]
-        public IActionResult Filter([FromBody]GetHotelRequestDto filterDto)
+        [HttpGet("filter")]
+        public IActionResult Filter([FromQuery]GetHotelRequestDto filterDto)
         {
-            var hotel = _hotelService.Filter(filterDto);
-            return Ok();
+            var hotels = _hotelService.Filter(filterDto);
+            return Ok(hotels);
         }
 
     

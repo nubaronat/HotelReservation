@@ -17,7 +17,13 @@ namespace Business.Concrete
     { 
 
         private readonly ICustomerDa _customerDal;
-    
+
+
+        public CustomerManager(ICustomerDa customerDal)
+        {
+            _customerDal = customerDal;
+        }
+
         public void Delete(int id)
         {
            _customerDal.Delete(id);
@@ -114,6 +120,7 @@ namespace Business.Concrete
                 PhoneNumber = customerCreateRequestDto.PhoneNumber,
 
             };
+            _customerDal.Insert(customer);  
             }
 
             public void Update(CustomerUpdateRequestDto customerUpdateRequestDto)
@@ -126,7 +133,9 @@ namespace Business.Concrete
                 customer.Email = customerUpdateRequestDto.Email;
                 customer.Password = customerUpdateRequestDto.Password;
                 customer.PhoneNumber = customerUpdateRequestDto.PhoneNumber;
+                _customerDal.Update(customer);
             }
+            
             {
 
          }

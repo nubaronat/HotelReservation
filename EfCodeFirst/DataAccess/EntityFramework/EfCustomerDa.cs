@@ -21,7 +21,7 @@ namespace DataAccess.EntityFramework
         {
             var query = _context.Customers.AsQueryable();
             if (filter.Id.HasValue)
-                query = query.Where(r => r.Id == filter.Id.Value);
+                query = query.Where(c => c.Id == filter.Id.Value);
             if (!string.IsNullOrEmpty(filter.FirstName))
                 query = query.Where(c => c.FirstName == filter.FirstName);
             if (!string.IsNullOrEmpty(filter.LastName))

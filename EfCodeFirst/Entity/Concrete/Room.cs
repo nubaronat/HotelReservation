@@ -22,6 +22,7 @@ namespace EfCodeFirst.Entity
         public virtual Hotel Hotel { get; set; }
 
         public decimal Price { get; set; }
+        [Required]
         public bool IsAvailable { get; set; }
         public ICollection<Reservation> Reservations { get; set; }
     }

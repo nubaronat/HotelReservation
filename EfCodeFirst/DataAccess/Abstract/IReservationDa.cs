@@ -1,4 +1,5 @@
 ﻿using EfCodeFirst.Entity;
+using Entity.DTOs.Reservation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,7 @@ namespace DataAccess.Abstract
 {
     public interface IReservationDa : IGenericDa<Reservation>
     {
+        // Add method for filtering customer
+        IQueryable<Reservation> GetReservations(GetReservationRequestDto filter);
     }
 }

@@ -21,15 +21,15 @@ namespace DataAccess.EntityFramework
         {
             var query = _context.Hotels.AsQueryable();
             if (filter.hotelId.HasValue)
-                query = query.Where(r =>r.hotelId == filter.hotelId.Value);
+                query = query.Where(h =>h.hotelId == filter.hotelId.Value);
             if (!string.IsNullOrEmpty(filter.Name))
-                query = query.Where(c => c.Name == filter.Name);
+                query = query.Where(h => h.Name == filter.Name);
             if (!string.IsNullOrEmpty(filter.Country))
-                query = query.Where(c => c.Country == filter.Country);
+                query = query.Where(h => h.Country == filter.Country);
             if (!string.IsNullOrEmpty(filter.City))
-                query = query.Where(c => c.City == filter.City);
+                query = query.Where(h => h.City == filter.City);
             if (filter.Rating.HasValue)
-                query = query.Where(r => r.Rating == filter.Rating.Value);
+                query = query.Where(h => h.Rating == filter.Rating.Value);
             
             return query;
 
