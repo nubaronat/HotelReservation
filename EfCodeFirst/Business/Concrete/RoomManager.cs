@@ -105,6 +105,8 @@ namespace Business.Concrete
                 query = query.Where(room => room.IsAvailable == filterDto.IsAvailable.Value);
             }
 
+            
+            
             return query.Select(room => new RoomResponseDto
             {
                 Id = room.RoomId,

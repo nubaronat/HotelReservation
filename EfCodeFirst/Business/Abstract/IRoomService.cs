@@ -13,7 +13,7 @@ namespace Business.Abstract
         void Insert(RoomCreateRequestDto roomCreateRequestDto);
         void Update(RoomUpdateRequestDto roomUpdateRequestDto);
         void Delete(int id);
-        IQueryable<GetRoomRequestDto> GetAll();
+        
         RoomResponseDto GetById(int id);
         IQueryable<RoomResponseDto> Filter(GetRoomRequestDto filterDto);
     }

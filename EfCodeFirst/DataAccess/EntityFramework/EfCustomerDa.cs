@@ -14,6 +14,8 @@ namespace DataAccess.EntityFramework
     {
         public EfCustomerDa(Context context) : base(context)
         {
+
+
         }
     }
 }
