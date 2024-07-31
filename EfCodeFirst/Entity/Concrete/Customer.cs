@@ -12,10 +12,10 @@ namespace EfCodeFirst.Entity
         [Key]
         public int Id { get; set; }
 
-        [StringLength(10)]
+        [StringLength(50)]
         public string FirstName { get; set; }
 
-        [StringLength(10)]
+        [StringLength(50)]
         public string LastName { get; set; }
 
         [StringLength(10)]
@@ -24,7 +24,7 @@ namespace EfCodeFirst.Entity
         [StringLength(30)]
         public string  Password { get; set; }
 
-        [StringLength(30)]
+        [StringLength(100)]
         public string Email { get; set; }
         public DateTime Created { get; set; }
 
