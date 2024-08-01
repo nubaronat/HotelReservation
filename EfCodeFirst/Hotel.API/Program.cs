@@ -1,18 +1,13 @@
-using Business.Abstract;
-using Business.Concrete;
-
-using DataAccess;
-using DataAccess.Abstract;
-
 using Business;
-using DataAccessLayer.Concrete;
-using FluentValidation;
 using Business.Validations.Customer;
-using FluentValidation.AspNetCore;
+using DataAccess;
+using DataAccessLayer.Concrete;
 using Entity.DTOs.Hotel;
-using Entity.DTOs.Room;
 using Entity.DTOs.Reservation;
-using Entity.DTOs.Customer;
+using Entity.DTOs.Room;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+
 
 
 
