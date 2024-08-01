@@ -1,15 +1,16 @@
-﻿using Business.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Entity.DTOs.Room;
-using EfCodeFirst.Entity;
-using DataAccess.Abstract;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using EfCodeFirst.Entity;
+using DataAccess.Abstract;
+using Business.Abstract;
+using Entity.DTOs.Room;
+
 namespace Business.Concrete
 {
     public class RoomManager : IRoomService
@@ -116,6 +117,7 @@ namespace Business.Concrete
                 IsAvailable = room.IsAvailable
             });
         }
-    }
+
+    }  
 
 }

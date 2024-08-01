@@ -5,13 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entity.DTOs.Room;
+using FluentValidation;
 
 namespace Business.Validations.Room
 {
     public class GetRoomRequestDtoValidator : AbstractValidator<GetRoomRequestDto>
     {
 
-        public GetRoomRequestDtoValidator()
+        public GetRoomRequestDtoValidator() 
         {
             RuleFor(r => r.Id)
                 .Must(id => !id.HasValue || id > 0)
@@ -29,8 +31,14 @@ namespace Business.Validations.Room
                 .Must(price => !price.HasValue || price > 0)
                 .WithMessage("Price must be a positive decimal.");
 
-            
+            RuleFor(x => x.HotelId)
+                .GreaterThan(0).WithMessage("OtelId 0'dan büyük olmalıdır.");
 
+            RuleFor(x => x.Price)
+                .GreaterThanOrEqualTo(0).WithMessage("Fiyat 0'dan büyük veya eşit olmalıdır.");
+
+            RuleFor(x => x.IsAvailable)
+                .NotNull().WithMessage("Müsaitlik durumu gerekli.");
         }
 
 

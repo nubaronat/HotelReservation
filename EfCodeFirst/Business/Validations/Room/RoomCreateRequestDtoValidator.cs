@@ -5,13 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entity.DTOs.Room;
+using FluentValidation;
 
 namespace Business.Validations.Room
 {
     public class RoomCreateRequestDtoValidator : AbstractValidator<RoomCreateRequestDto>
     {
 
-        public RoomCreateRequestDtoValidator()
+        public RoomCreateRequestDtoValidator() 
         {
             RuleFor(r => r.Type)
                 .NotEmpty()
@@ -38,7 +40,7 @@ namespace Business.Validations.Room
                 .NotEmpty()
                 .NotNull()
                 .WithMessage("Please choose availability of room");
-                
+
         }
     }
 
